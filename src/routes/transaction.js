@@ -1,3 +1,4 @@
+const getTransactionHistoryController = require("../controller/transaction/history");
 const transactionController = require("../controller/transaction/transaction");
 const auth = require("../middleware/auth");
 
