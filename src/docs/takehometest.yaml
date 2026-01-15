@@ -4,6 +4,7 @@ info:
   version: 1.0.0
   description: Dokumentasi API untuk Take Home Test Nutech
 servers:
+  - url: https://hometest-production-9643.up.railway.app/
   - url: http://localhost:3000
 paths:
   /register:
