@@ -10,6 +10,7 @@ function auth(req, res, next) {
     req.user = { id: decoded.id, email: decoded.email };
     next();
   } catch (error) {
+    console.error("JWT verification error:", error.message);
     return errorResponse(res, 401, "Token tidak valid");
   }
 }
