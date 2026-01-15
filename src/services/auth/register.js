@@ -11,7 +11,7 @@ async function registerUser(pool, { email, first_name, last_name, password }) {
 
   return {
     status: 201,
-    message: "User registered successfully",
+    message: "Registrasi pengguna berhasil",
     data: { email, first_name, last_name },
   };
 }
