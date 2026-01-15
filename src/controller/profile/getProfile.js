@@ -6,9 +6,9 @@ const profileController = async (pool, req, res, next) => {
     const userId = req.user.id;
     const profile = await getProfile(pool, userId);
     if (!profile) {
-      return errorResponse(res, 404, "Profile not found");
+      return errorResponse(res, 404, "Profil tidak ditemukan");
     }
-    return successResponse(res, 200, "Profile fetched successfully", profile);
+    return successResponse(res, 200, "Profil berhasil diambil", profile);
   } catch (error) {
     return next(error);
   }

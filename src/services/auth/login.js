@@ -10,13 +10,13 @@ async function loginUser(pool, { email, password }) {
 
   const user = rows[0];
   if (!user) {
-    const error = new Error("Invalid email");
+    const error = new Error("Email tidak valid");
     error.status = 401;
     throw error;
   }
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
-    const error = new Error("Invalid password");
+    const error = new Error("Kata sandi tidak valid");
     error.status = 401;
     throw error;
   }
@@ -32,7 +32,7 @@ async function loginUser(pool, { email, password }) {
   );
   return {
     status: 200,
-    message: "Login successful",
+    message: "Login berhasil",
     data: {
       token,
     },
