@@ -9,7 +9,7 @@ const balanceRouter = require("./balance");
 const { transactionRouter } = require("./transaction");
 
 router.get("/", (req, res) => {
-  res.send("Welcome to the API");
+  res.redirect("/api-docs");
 });
 
 router.use("/", authRouter(pool));
