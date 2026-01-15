@@ -700,7 +700,7 @@ paths:
         5. Handling Response sesuai dokumentasi Response dibawah
         6. Response invoice_number untuk formatnya generik/bebas
       tags:
-        - 4. Module Transaction
+        - 3. Module Balance
       security:
         - bearerAuth: []
       requestBody:
@@ -797,7 +797,7 @@ paths:
         4. Data order dari yang paling baru berdasarkan transaction date (created_on)
         5. Handling Response sesuai dokumentasi Response dibawah
       tags:
-        - 4. Module Transaction
+        - 3. Module Balance
       security:
         - bearerAuth: []
       parameters:
