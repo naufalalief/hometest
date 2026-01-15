@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const { errorResponse } = require("../helper/response");
-function authMiddleware(req, res, next) {
+function auth(req, res, next) {
   let token = req.header("Authorization");
   if (token?.startsWith("Bearer ")) token = token.slice(7).trim();
   if (!token) return errorResponse(res, 401, "Token tidak ditemukan");
@@ -14,4 +14,4 @@ function authMiddleware(req, res, next) {
   }
 }
 
-module.exports = authMiddleware;
+module.exports = auth;
