@@ -5,6 +5,7 @@ const pool = require("../services/db/config");
 const profileRouter = require("./profile");
 const bannerRouter = require("./banner");
 const layananRouter = require("./layanan");
+const balanceRouter = require("./balance");
 
 router.get("/", (req, res) => {
   res.send("Welcome to the API");
@@ -14,4 +15,5 @@ router.use("/", authRouter(pool));
 router.use("/", profileRouter(pool));
 router.use("/", bannerRouter(pool));
 router.use("/", layananRouter(pool));
+router.use("/", balanceRouter(pool));
 module.exports = router;
