@@ -1,5 +1,5 @@
 const express = require("express");
-const profileController = require("../controller/profile/profile");
+const profileController = require("../controller/profile/getProfile");
 const auth = require("../middleware/auth");
 const updateProfileController = require("../controller/profile/update");
 const upload = require("../middleware/upload");
