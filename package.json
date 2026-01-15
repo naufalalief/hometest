@@ -1,0 +1,32 @@
+{
+  "name": "takehometest-nutech",
+  "version": "1.0.0",
+  "description": "take home test ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naufalalief/hometest.git"
+  },
+  "author": "Naufal Alief",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naufalalief/hometest/issues"
+  },
+  "homepage": "https://github.com/naufalalief/hometest#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.0.2",
+    "mysql2": "^3.16.0",
+    "nodemon": "^3.1.11",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0",
+    "zod": "^4.3.5"
+  }
+}
